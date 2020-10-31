@@ -1,0 +1,258 @@
+$primary-BG-color: #efd2d2;
+$primary-Font-color: #6b6464;
+$primary-Font-color2: rgb(75, 68, 68);
+
+// @font-face {
+//     font-family: Nitti;
+//     src: url(Sourse/Nitti-Normal.ttf);
+// }
+
+// @font-face {
+//     font-family: NittiBold;
+//     src: url(Sourse/Nitti-Bold.ttf);
+// }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.flex_top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex_bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.flex_top_Seperate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // align-items: flex-start;
+}
+
+.flex_top_Seperate2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    // align-items: flex-start;
+}
+
+body {
+    margin: 0;
+    color: $primary-Font-color;
+    font-family: "Raleway", sans-serif;
+
+    -webkit-user-select: none; /* for Chrome */
+    -moz-user-select: none; /* for Firefox */
+}
+
+#divMain {
+    #divMenu {
+        flex-shrink: 0;
+        height: 100vh;
+        width: 17%;
+        min-width: 300px;
+        padding: 0% 2% 3.5% 39px;
+        background-color: $primary-BG-color;
+        color: $primary-Font-color;
+        text-align: left;
+
+        ul {
+            list-style-type: none;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+
+            font-family: "Noto Sans TC", sans-serif;
+        }
+
+        dl {
+            margin-bottom: 50px;
+        }
+
+        hr {
+            border: 0;
+            width: 70%;
+            height: 0.1px;
+            background: $primary-Font-color;
+            background-image: linear-gradient(to right, #dab4b4, #bea5a5, #dab4b4);
+            display: block;
+
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: 300;
+            font-size: 1.1rem;
+            letter-spacing: 0px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        dd {
+            text-indent: -1.5rem;
+            line-height: 2.2em;
+            font-weight: 300;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+    }
+
+    #divMenu_m {
+        width: 100%;
+        position: relative;
+        display: none;
+    }
+
+    #divMainList {
+        height: 100vh;
+        width: 78%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 3% 2%;
+        overflow-y: scroll;
+
+        .Project {
+            width: 45%;
+            margin: 0 40px 60px 0;
+            color: $primary-Font-color2;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+
+            .ChangeCover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                pointer-events: none;
+                //visibility: hidden;
+            }
+
+            .ProjectName {
+                font-weight: bold;
+                padding-left: 1em;
+            }
+        }
+    }
+
+    #divMainList::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+    /* Tab */
+    #divMain {
+        #divMenu {
+            width: 20%;
+            min-width: 300px;
+            padding: 0% 2% 3.5% 39px;
+            background-color: $primary-BG-color;
+            color: $primary-Font-color;
+            text-align: left;
+        }
+
+        #divMainList {
+            padding-top: 5%;
+            .Project {
+                width: 80%;
+                margin: 0 0 50px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-device-width: 759px) {
+    /* Tab */
+    .flex_top {
+        flex-wrap: wrap;
+    }
+    
+    #divMain {
+        #divMenu {
+            min-width: 0px;
+            width: 100%;
+            position: fixed;
+            z-index: 90;
+            margin-top: -100vh;
+        }
+
+        #divMenu_m {
+            display: block;
+            position: fixed;
+            padding: 5px 0 5px 0;
+            width: 100%;
+            height: 70px;
+            z-index: 100;
+            background:#fff;
+            //box-shadow: 0px 1px 2px rgba($color: #b4b4b4, $alpha: 0.6);
+            //background: linear-gradient(135deg, #efd2d2 0%,#efd2d2 7%, #ffffff 5%);
+
+            #picLogo {
+                width: 20px;
+                margin-left: 30px;
+                margin-top: 3px;
+                float: left;
+            }
+
+            #div_Menu_Btn_m {
+                position: absolute;
+                top: 0%;
+                right: 5%;
+                width: 7%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .divMenu_hr_m {
+                background: #999;
+                border: none;
+                height: 3px;
+                width: 100%;
+                margin: 3px auto;
+            }
+            .divMenu_hr_m2 {
+                background: #b4b4b4;
+                height: 2px;
+            }
+        }
+
+        #divMainList {
+            padding-top: 90px;
+
+            .Project {
+                width: 85%;
+                margin: 0 0 50px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<item>
+		<ProjectName>Hinoki Style House</ProjectName>
+		<PageURL>Hinoki</PageURL>
+		<FolderName>Sourse/Hinoki</FolderName>
+		<TotalPicCnt>13</TotalPicCnt>
+	</item>
+	<item>
+		<ProjectName>Pure Office</ProjectName>
+		<PageURL>PureOffice</PageURL>
+		<FolderName>Sourse/PureOffice</FolderName>
+		<TotalPicCnt>17</TotalPicCnt>
+	</item>
+</ROOT>

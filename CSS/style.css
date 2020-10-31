@@ -1,0 +1,279 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flex_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex_top_Seperate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex_top_Seperate2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+  color: #6b6464;
+  font-family: "Raleway", sans-serif;
+  -webkit-user-select: none;
+  /* for Chrome */
+  -moz-user-select: none;
+  /* for Firefox */
+}
+
+#divMain #divMenu {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100vh;
+  width: 17%;
+  min-width: 300px;
+  padding: 0% 2% 3.5% 39px;
+  background-color: #efd2d2;
+  color: #6b6464;
+  text-align: left;
+}
+
+#divMain #divMenu ul {
+  list-style-type: none;
+}
+
+#divMain #divMenu p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#divMain #divMenu dl {
+  margin-bottom: 50px;
+}
+
+#divMain #divMenu hr {
+  border: 0;
+  width: 70%;
+  height: 0.1px;
+  background: #6b6464;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dab4b4), color-stop(#bea5a5), to(#dab4b4));
+  background-image: linear-gradient(to right, #dab4b4, #bea5a5, #dab4b4);
+  display: block;
+  margin-bottom: 20px;
+}
+
+#divMain #divMenu dt {
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#divMain #divMenu dd {
+  text-indent: -1.5rem;
+  line-height: 2.2em;
+  font-weight: 300;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#divMain #divMenu_m {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+#divMain #divMainList {
+  height: 100vh;
+  width: 78%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 3% 2%;
+  overflow-y: scroll;
+}
+
+#divMain #divMainList .Project {
+  width: 45%;
+  margin: 0 40px 60px 0;
+  color: #4b4444;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+#divMain #divMainList .Project img {
+  width: 100%;
+}
+
+#divMain #divMainList .Project .ChangeCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#divMain #divMainList .Project .ProjectName {
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+#divMain #divMainList::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+  /* Tab */
+  #divMain #divMenu {
+    width: 20%;
+    min-width: 300px;
+    padding: 0% 2% 3.5% 39px;
+    background-color: #efd2d2;
+    color: #6b6464;
+    text-align: left;
+  }
+  #divMain #divMainList {
+    padding-top: 5%;
+  }
+  #divMain #divMainList .Project {
+    width: 80%;
+    margin: 0 0 50px 0;
+  }
+}
+
+@media only screen and (max-device-width: 759px) {
+  /* Tab */
+  .flex_top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #divMain #divMenu {
+    min-width: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+    margin-top: -100vh;
+  }
+  #divMain #divMenu_m {
+    display: block;
+    position: fixed;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    background: #fff;
+  }
+  #divMain #divMenu_m #picLogo {
+    width: 20px;
+    margin-left: 30px;
+    margin-top: 3px;
+    float: left;
+  }
+  #divMain #divMenu_m #div_Menu_Btn_m {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 7%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #divMain #divMenu_m .divMenu_hr_m {
+    background: #999;
+    border: none;
+    height: 3px;
+    width: 100%;
+    margin: 3px auto;
+  }
+  #divMain #divMenu_m .divMenu_hr_m2 {
+    background: #b4b4b4;
+    height: 2px;
+  }
+  #divMain #divMainList {
+    padding-top: 90px;
+  }
+  #divMain #divMainList .Project {
+    width: 85%;
+    margin: 0 0 50px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

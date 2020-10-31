@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<item>
+		<ProjectName>Hinoki Style House</ProjectName>
+		<CoverPic1>Sourse/Cover1.jpg</CoverPic1>
+		<CoverPic2>Sourse/Cover1-1.jpg</CoverPic2>
+		<Status>Y</Status>
+		<OrdNo>10</OrdNo>
+		<LinkURL>Page.html?Hinoki</LinkURL>
+	</item>
+	<item>
+		<ProjectName>PureOffice</ProjectName>
+		<CoverPic1>Sourse/Cover2.jpg</CoverPic1>
+		<CoverPic2>Sourse/Cover2-1.jpg</CoverPic2>
+		<Status>Y</Status>
+		<OrdNo>20</OrdNo>
+		<LinkURL>Page.html?PureOffice</LinkURL>
+	</item>
+</ROOT>
