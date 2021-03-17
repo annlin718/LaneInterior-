@@ -1,0 +1,58 @@
+$primary-BG-color: #efd2d2;
+$primary-Font-color: #6b6464;
+$primary-Font-color2: rgb(75, 68, 68);
+
+#divMainList {
+    .divAll {
+        text-align: center;
+        padding: 5px;
+        // border: 1px solid #999;
+        // border-top: 1px solid #000;
+        // border-left: 4px dotted #009FCC;
+        // border: 1px dashed #999;
+        // border-right: 1px solid #7A0099;
+        padding: 20px 50px;
+
+        .divLogo {
+
+            // background: #000;
+            #PicLogo {
+                width: 38px;
+                margin-right: 10px;
+            }
+        }
+
+        .headerDivider {
+            width: 3px;
+            border-right: 1px solid #16222c;
+            margin-right: 20px;
+        }
+
+        .ContactInfo {
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-right: 60px;
+            padding: 20px 0;
+
+            .SpanList1 {
+                margin-bottom: 20px;
+            }
+
+            a {
+                color: $primary-Font-color;
+                text-decoration: none;
+            }
+        }
+
+        .SocialLink {
+            // background: #759dbe;
+
+            .PicSocialIcon {
+                width: 35px;
+                margin: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

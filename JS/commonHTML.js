@@ -6,17 +6,16 @@ var sHTML = `<div id="divMenu" class="flex_bottom">
                     <hr align="left">
                     <dd onclick="goLink('Page.html?Hinoki')">Hinoki Style House</dd>
                     <dd onclick="goLink('Page.html?PureOffice')">Pure Office</dd>
-                    <dd>W.W.II topics bar (coming soon)</dd>
                 </dl>
 
                 <dl>
-                    <dt>Section&nbsp;&nbsp;02</dt>
+                    <dt>About me</dt>
                     <hr align="left">
-                    <dd>LiFe</dd>
+                    <dd>About</dd>
                 </dl>
 
                 <dl>
-                    <dt>Information</dt>
+                    <dt onclick="goLink('Contact.html')">Contact</dt>
                 </dl>
             </nav>
         </div>

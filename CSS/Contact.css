@@ -1,0 +1,39 @@
+#divMainList .divAll {
+  text-align: center;
+  padding: 5px;
+  padding: 20px 50px;
+}
+
+#divMainList .divAll .divLogo #PicLogo {
+  width: 38px;
+  margin-right: 10px;
+}
+
+#divMainList .divAll .headerDivider {
+  width: 3px;
+  border-right: 1px solid #16222c;
+  margin-right: 20px;
+}
+
+#divMainList .divAll .ContactInfo {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 60px;
+  padding: 20px 0;
+}
+
+#divMainList .divAll .ContactInfo .SpanList1 {
+  margin-bottom: 20px;
+}
+
+#divMainList .divAll .ContactInfo a {
+  color: #6b6464;
+  text-decoration: none;
+}
+
+#divMainList .divAll .SocialLink .PicSocialIcon {
+  width: 35px;
+  margin: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Contact.css.map */

@@ -53,13 +53,32 @@ $primary-Font-color2: rgb(75, 68, 68);
     // align-items: flex-start;
 }
 
+.flex_top_Seperate3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    // align-items: flex-start;
+}
+
+.flex_Column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; //flex-start | flex-end | center | space-between | space-around;
+    align-items: flex-start; //flex-start | flex-end | center | baseline | stretch;
+}
+
 body {
     margin: 0;
     color: $primary-Font-color;
     font-family: "Raleway", sans-serif;
 
-    -webkit-user-select: none; /* for Chrome */
-    -moz-user-select: none; /* for Firefox */
+    -webkit-user-select: none;
+    /* for Chrome */
+    -moz-user-select: none;
+    /* for Firefox */
 }
 
 #divMain {
@@ -166,6 +185,7 @@ body {
 }
 
 @media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+
     /* Tab */
     #divMain {
         #divMenu {
@@ -179,6 +199,7 @@ body {
 
         #divMainList {
             padding-top: 5%;
+
             .Project {
                 width: 80%;
                 margin: 0 0 50px 0;
@@ -188,11 +209,12 @@ body {
 }
 
 @media only screen and (max-device-width: 759px) {
+
     /* Tab */
     .flex_top {
         flex-wrap: wrap;
     }
-    
+
     #divMain {
         #divMenu {
             min-width: 0px;
@@ -209,7 +231,7 @@ body {
             width: 100%;
             height: 70px;
             z-index: 100;
-            background:#fff;
+            background: #fff;
             //box-shadow: 0px 1px 2px rgba($color: #b4b4b4, $alpha: 0.6);
             //background: linear-gradient(135deg, #efd2d2 0%,#efd2d2 7%, #ffffff 5%);
 
@@ -240,6 +262,7 @@ body {
                 width: 100%;
                 margin: 3px auto;
             }
+
             .divMenu_hr_m2 {
                 background: #b4b4b4;
                 height: 2px;
