@@ -1,7 +1,7 @@
 var sHTML = `<div id="divMenu" class="flex_bottom">
             <nav class="menu">
             <!--<p>街巷設計製作</p>-->
-            <img onclick="goLink('index.html')" id="picLogo" src="" />
+            <img onclick="goLink('index.html')" class="picLogo" src="" />
                 <dl>
                     <dt onclick="goLink('Project.html')">Project&nbsp;&nbsp;</dt>
                     <!--<hr align="left">-->
@@ -22,7 +22,7 @@ var sHTML = `<div id="divMenu" class="flex_bottom">
         </div>
         
         <div id="divMenu_m">
-            <img onclick="goLink('index.html')" id="picLogo" src="" />
+            <img onclick="goLink('index.html')" class="picLogo" src="" />
             <div id="div_Menu_Btn_m" onclick="MenuExpand()">
                 <hr class="divMenu_hr_m" />
                 <hr class="divMenu_hr_m divMenu_hr_m2" />

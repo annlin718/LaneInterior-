@@ -16,8 +16,8 @@ window.onload = function () {
 
 
     }
-    // $("#picLogo").attr("src", "../Sourse/logo1.png");
-    $("#picLogo").attr("src", "../Sourse/logo1.png");
+    // $(".picLogo").attr("src", "../Sourse/logo1.png");
+    $(".picLogo").attr("src", "../Sourse/logo1.png");
 };
 
 function goLink(sURL) {
@@ -39,7 +39,7 @@ function MenuExpand() {
         var to = {
             marginTop: 0
         };
-        TweenLite.set($("#picLogo"), {
+        TweenLite.set($(".picLogo"), {
             opacity: 0
         });
         TweenLite.set($("#divMenu_m"), {
@@ -91,7 +91,7 @@ function myFunction2() {
     TweenLite.to($(".divMenu_hr_m2"), 0.2, {
         display: "block"
     });
-    TweenLite.to($("#picLogo"), 0.7, {
+    TweenLite.to($(".picLogo"), 0.7, {
         opacity: 1
     });
     TweenLite.to($("#divMenu_m"), 0.2, {
