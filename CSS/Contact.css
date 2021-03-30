@@ -1,10 +1,14 @@
+#divMenu_m #picLogo {
+  display: none;
+}
+
 #divMainList .divAll {
   text-align: center;
   padding: 5px;
   padding: 20px 50px;
 }
 
-#divMainList .divAll .divLogo #PicLogo {
+#divMainList .divAll .divLogo #PicLogo_Contact {
   width: 38px;
   margin-right: 10px;
 }
@@ -35,5 +39,25 @@
   width: 35px;
   margin: 5px;
   cursor: pointer;
+}
+
+@media only screen and (max-device-width: 759px) {
+  #divMainList .divAll .headerDivider {
+    display: none;
+  }
+  #divMainList .divAll .SocialLink {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #divMainList .divAll .SocialLink .PicSocialIcon {
+    width: 35px;
+    margin: 5px;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

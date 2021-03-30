@@ -2,21 +2,21 @@ $primary-BG-color: #efd2d2;
 $primary-Font-color: #6b6464;
 $primary-Font-color2: rgb(75, 68, 68);
 
+#divMenu_m {
+
+    #picLogo {
+        display: none;
+    }
+}
+
 #divMainList {
     .divAll {
         text-align: center;
         padding: 5px;
-        // border: 1px solid #999;
-        // border-top: 1px solid #000;
-        // border-left: 4px dotted #009FCC;
-        // border: 1px dashed #999;
-        // border-right: 1px solid #7A0099;
         padding: 20px 50px;
 
         .divLogo {
-
-            // background: #000;
-            #PicLogo {
+            #PicLogo_Contact {
                 width: 38px;
                 margin-right: 10px;
             }
@@ -45,6 +45,7 @@ $primary-Font-color2: rgb(75, 68, 68);
         }
 
         .SocialLink {
+            // width: 100%;
             // background: #759dbe;
 
             .PicSocialIcon {
@@ -55,4 +56,26 @@ $primary-Font-color2: rgb(75, 68, 68);
         }
     }
 
+}
+
+@media only screen and (max-device-width: 759px) {
+    #divMainList {
+        .divAll {
+            .headerDivider {
+                display: none;
+            }
+
+            .SocialLink {
+                // width: 80%;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                .PicSocialIcon {
+                    width: 35px;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

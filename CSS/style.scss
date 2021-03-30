@@ -92,6 +92,12 @@ body {
         color: $primary-Font-color;
         text-align: left;
 
+        #picLogo {
+            width: 28px;
+            margin-bottom: 20px;
+            // opacity: 0;
+        }
+
         ul {
             list-style-type: none;
         }
