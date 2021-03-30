@@ -17,7 +17,7 @@ window.onload = function () {
 
     }
     // $(".picLogo").attr("src", "../Sourse/logo1.png");
-    $(".picLogo").attr("src", "../Sourse/logo1.png");
+    $(".picLogo").attr("src", "/Sourse/logo1.png");
 };
 
 function goLink(sURL) {
