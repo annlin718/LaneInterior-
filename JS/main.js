@@ -14,10 +14,10 @@ window.onload = function () {
         };
         TweenLite.fromTo(ObjPic, duration, from, to);
 
-
+        $(".picLogo").attr("src", "https://annlin718.github.io/LaneInterior-/Sourse/logo1.png");
     }
     // $(".picLogo").attr("src", "../Sourse/logo1.png");
-    $(".picLogo").attr("src", "/Sourse/logo1.png");
+
 };
 
 function goLink(sURL) {
